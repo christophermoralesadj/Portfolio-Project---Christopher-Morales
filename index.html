@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio by: Christopher Morales</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+<nav id="nav">
+    <div class="menu-toggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="menu">
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  
+    <!-- Light/Dark Mode Toggle -->        
+    <div class="theme-switch-wrapper">
+        <span id="toggle-icon">
+            <span class="toggle-text">Light Mode</span>
+                <i class="fas fa-sun"></i>
+            </span>
+      <label class="theme-switch">
+        <input type="checkbox">
+        <div class="slider round"></div>
+      </label>
+    </div>
+</nav>
+  
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="title-group">
+            <h1>Portfolio</h1>
+            <h2>by: Christopher Morales</h2>
+        </div>
+    </section>
+
+    <!-- About Section  -->
+    <section id="about">
+        <h1>About Me</h1>
+        <div class="about-container">
+            <h3>What brought me to this point?</h3>
+            <p>
+                My name is Christopher Morales. I've been a teacher for the past 13 years. This October I decided to resign from my position as a teacher. Though I enjoyed what I was doing I felt like it was time for a change. After much research I decided to enroll in Nucamp's front-end bootcamp and to my surprise, I really enjoyed what I was doing.
+            </p>
+            <h3>What's my educational background?</h3>
+            <p>
+                I currently hold a Bachelor's degree in Finance. As mentioned above, I'm currenly enrolled in Nucamp's Coding Bootcamp. Since starting, I've decide to enroll in the Full-stack Bootcamp instead of just the font end.the great thing about being a former teacher is that you learn how to find answers. In my short exposure to web developement, I've learned that one of the most important skills you can have is not knowing everything but being able to find answers when you don't know something.
+            </p>
+            <h3>What makes me a great candidate?</h3>
+            <p>
+                I have demonstrated skills and solid fundamentals and I can add value for your company. I still have a lot to learn but I'm a quick learner, ready to roll up my sleeves and not afraid of challenges. My goal is to grow my Web Developer skills and learn from the senior developers so that I can provide even more value to your business.
+            </p>
+            <h3>What's my motivation?</h3>
+            <p>
+                Simply put, my family. I enjoy spending time with my family and would like to provide them with a good life.
+            </p>
+        </div>
+    </section>
+
+    <!-- Projects Section  -->
+    <section id="projects">
+        <h1>My Projects</h1>
+        <!-- Row 1 -->
+        <div class="projects-container">
+            <div class="card-container">
+                <div class="card">
+                    <div class="card-image card-1"></div>
+                    <h3>Bootstrap  Campsite Website</h3>
+                    <p>
+                        I made this website as part of my Full Stack Bootcamp with Nucamp.
+                    </p>
+                    <button class="button" onclick="window.open('https://marvelous-rabanadas-af98fa.netlify.app/','_blank');" target="_blank">
+                        Website
+                    </button>                    
+                </div>
+                <div class="card">
+                    <div class="card-image  card-2"></div>
+                    <h3>Quote Generator: HTML CSS JavaScript</h3>
+                    <p>
+                        This is a personal project where I learned how to connect to an api for quotes. 
+                    </p>
+                    <button class="button" onclick="window.open('https://cool-cassata-f2f19a.netlify.app/', '_blank')">
+                        Website
+                     </button>                     
+                </div>
+                <div class="card">
+                    <div class="card-image card-3"></div>
+                    <h3>React Nucamp Project</h3>
+                    <p>This is a React Project that was campleted as part of the Front-End course with Nucamp.</p>
+                    <button class="button" onclick="window.open('https://transcendent-cajeta-b35c16.netlify.app/', '_blank')">
+                        Website
+                     </button>
+                </div>
+                <div class="card">
+                    <div class="card-image card-4"></div>
+                    <h3>Title</h3>
+                    <p>Text</p>
+                    <button class="button" onclick="window.open('', '_blank')">
+                        Website
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card-image card-5"></div>
+                    <h3>Title</h3>
+                    <p>Text</p>
+                    <button class="button" onclick="window.open('', '_blank')">
+                        Website
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card-image card-6"></div>
+                    <h3>Title</h3>
+                    <p>Text</p>
+                    <button class="button" onclick="window.open('', '_blank')">
+                        Website
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card-image card-7"></div>
+                    <h3>Title</h3>
+                    <p>Text</p>
+                    <button class="button" onclick="window.open('', '_blank')">
+                        Website
+                    </button>
+                </div>
+                <div class="card">
+                    <div class="card-image card-8"></div>
+                    <h3>Title</h3>
+                    <p>Text</p>
+                    <button class="button" onclick="window.open('', '_blank')">
+                        Website
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section  -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <div class="contact-container">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" placeholder="Enter your email" required>
+        
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+        
+                <input type="submit" value="Send" onclick="sendEmail()">
+            </form>
+        </div>
+    </section>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
