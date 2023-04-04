@@ -52,18 +52,21 @@ menuToggle.addEventListener('click', () => {
 
 // Send Email
 function sendEmail() {
-  const name = document.getElementById("name").value;
-  const email = document.getElementById("email").value;
-  const phone = document.getElementById("phone").value;
-  const message = document.getElementById("message").value;
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const message = document.getElementById("message").value;
+    const url = "mailto:christopher.moralesadj@gmail.com?subject=Contact Form Submission&body=" + "Name: " + name + "%0D%0AEmail: " + email + "%0D%0APhone: " + phone + "%0D%0AMessage: " + message;
 
-  const subject = `New message from ${name}`;
-  const body = `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0AMessage: ${message}`;
-
-  const mailtoLink = `mailto:christopher.moralesadj@gmail.com?subject=${subject}&body=${body}`;
-
-  window.location.href = mailtoLink;
+    window.location.href = url;
 }
+
+const form = document.getElementById("contact-form");
+form.addEventListener("submit", function(event) {
+    event.preventDefault();
+    sendEmail();
+});
+
 
 // Check Local Storage For Theme
 const currentTheme = localStorage.getItem('theme');
